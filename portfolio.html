@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hel Chanvutha - Electrical Engineering Portfolio</title>
+    <meta name="description" content="Electrical Engineering Student specializing in MEP systems and Quality Control">
+    <meta name="keywords" content="electrical engineering, MEP, quality control, circuit design, embedded systems">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">HC</div>
+            <div class="loader-text">Loading Portfolio...</div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">HC</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                    <div class="greeting-wave">👋</div>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">Hel</span>
+                    <span class="name-line">Chanvutha</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">I'm a</span>
+                    <div class="typing-container">
+                        <span id="typed-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Passionate Electrical Engineering student specializing in MEP systems design and quality control, 
+                    creating innovative solutions for modern electrical challenges.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Hel Chanvutha" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element" data-speed="2">⚡</div>
+                        <div class="floating-element" data-speed="3">🔧</div>
+                        <div class="floating-element" data-speed="1.5">⚙️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=600&fit=crop" alt="Working on electrical systems" class="about-image">
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Years of Study</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-count="95">0</span>
+                                <span class="stat-label">% Accuracy Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="lead">I am a dedicated third-year Electrical Engineering student at the Institute of Technology of Cambodia, with a passion for creating efficient MEP systems and ensuring high-quality standards in electrical projects.</p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <p>My journey in electrical engineering has been driven by curiosity and a desire to solve real-world problems. Through hands-on experience with circuit design, embedded systems, and automation projects, I've developed a comprehensive skill set that bridges theoretical knowledge with practical application.</p>
+                        
+                        <p>As a part-time mathematics teacher and active member of the Robocon team, I've strengthened my communication skills and leadership abilities while maintaining academic excellence, consistently ranking in the top 10% of my class.</p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Academic Excellence</h4>
+                                <p>Top 10% of class with strong foundation in Circuit Analysis, Control Systems, and Power Electronics</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <h4>Practical Experience</h4>
+                                <p>Hands-on projects including solar chargers and autonomous robots with high precision results</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Leadership & Teaching</h4>
+                                <p>Team leader experience and part-time teaching role developing communication skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I do best</span>
+                <h2 class="section-title">Core Expertise</h2>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Circuit Design (KiCad)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MATLAB/Simulink</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C Programming</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">STM32 Microcontrollers</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Specializations</h3>
+                        </div>
+                        <div class="specialization-cards">
+                            <div class="spec-card">
+                                <div class="spec-icon">🏗️</div>
+                                <h4>MEP Systems</h4>
+                                <p>Mechanical, Electrical, and Plumbing systems integration and optimization</p>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-icon">🔍</div>
+                                <h4>Quality Control</h4>
+                                <p>Implementation of QC protocols and testing procedures for reliability</p>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-icon">⚡</div>
+                                <h4>Power Electronics</h4>
+                                <p>Power conversion, control systems, and renewable energy applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="skills-radar">
+                        <canvas id="skillsChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My recent work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="embedded">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop" alt="Line-Following Robot">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-project="robot">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">March 2025</span>
+                            <span class="project-category-tag">Embedded Systems</span>
+                        </div>
+                        <h3 class="project-title">Autonomous Line-Following Robot</h3>
+                        <p class="project-description">Advanced STM32-based robot with PID control algorithm achieving 95% path accuracy. Implemented PWM signals and IR sensor integration for precise navigation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">STM32</span>
+                            <span class="tech-tag">C Programming</span>
+                            <span class="tech-tag">PID Control</span>
+                            <span class="tech-tag">PWM</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">0.1s</span>
+                                <span class="stat-label">Response Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="renewable">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop" alt="Solar Battery Charger">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-project="solar">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">February 2025</span>
+                            <span class="project-category-tag">Renewable Energy</span>
+                        </div>
+                        <h3 class="project-title">Smart Solar Battery Charger</h3>
+                        <p class="project-description">Optimized solar-powered charging system with 20% efficiency improvement. Complete circuit design and simulation for MEP applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">KiCad</span>
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Power Electronics</span>
+                            <span class="tech-tag">MPPT</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">20%</span>
+                                <span class="stat-label">Efficiency Gain</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12V</span>
+                                <span class="stat-label">Output Voltage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="smart">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Smart Home System">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-project="smart-home">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">January 2025</span>
+                            <span class="project-category-tag">Smart Systems</span>
+                        </div>
+                        <h3 class="project-title">Intelligent Lighting Control System</h3>
+                        <p class="project-description">Automated lighting system with energy optimization and quality control standards. Integrated sensor network with responsive control algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">Quality Control</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">30%</span>
+                                <span class="stat-label">Energy Savings</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.5%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My journey</span>
+                <h2 class="section-title">Experience & Leadership</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-date="2024 - Present">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3>Mathematics Teacher (Part-Time)</h3>
+                                <h4>Mekun Academy, Phnom Penh</h4>
+                                <span class="duration">June 2024 - Present</span>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                        </div>
+                        <p>Developed and delivered comprehensive algebra and geometry lessons to 15-20 high school students, implementing innovative teaching methods that improved average test scores by 20%. Enhanced communication and leadership skills through student mentoring.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement">20% score improvement</span>
+                            <span class="achievement">15-20 students taught</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="2024 - Present">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3>Robocon Team Member & Volunteer Referee</h3>
+                                <h4>Robocon 2025, Cambodia</h4>
+                                <span class="duration">June 2024 - Present</span>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <p>Contributed to circuit design and system integration for the ITC02 team in national robot competition. Served as volunteer referee ensuring competition standards and fair play, developing technical judgment and leadership skills.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement">National competition</span>
+                            <span class="achievement">Circuit design lead</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="2024">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3>Volunteer Coordinator</h3>
+                                <h4>National Career Fair, Phnom Penh</h4>
+                                <span class="duration">October 26-27, 2024</span>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                        <p>Coordinated logistics and managed operations for 200+ attendees at the national career fair. Built valuable professional networks with industry leaders and enhanced organizational and communication skills through large-scale event management.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement">200+ attendees</span>
+                            <span class="achievement">Event coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-date="2024">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3>DC Lab Team Leader</h3>
+                                <h4>Institute of Technology of Cambodia</h4>
+                                <span class="duration">2024</span>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                        </div>
+                        <p>Led a multidisciplinary team in designing and testing DC circuits with emphasis on safety and performance standards. Implemented rigorous quality control measures resulting in 100% project success rate and enhanced team collaboration.</p>
+                        <div class="achievement-tags">
+                            <span class="achievement">100% success rate</span>
+                            <span class="achievement">Team leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's work together</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Ready to start your next project?</h3>
+                        <p>I'm always interested in new opportunities and challenging projects. Whether you need help with MEP systems design, quality control implementation, or embedded systems development, let's discuss how we can work together.</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <a href="mailto:chanvuthabel45@gmail.com">chanvuthabel45@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Phone</h4>
+                                <a href="tel:+855975681700">+855-975681700</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Location</h4>
+                                <span>Toul Kork, Phnom Penh, Cambodia</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Availability</h4>
+                                <span>Open for internships and collaborations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or how we can work together..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Hel Chanvutha</span>
+                    </div>
+                    <p>Electrical Engineering Student specializing in MEP systems and Quality Control</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:chanvuthabel45@gmail.com">Email</a></li>
+                            <li><a href="tel:+855975681700">Phone</a></li>
+                            <li><a href="#contact">Contact Form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hel Chanvutha. All rights reserved.</p>
+                <p>Designed with passion for innovation and excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
